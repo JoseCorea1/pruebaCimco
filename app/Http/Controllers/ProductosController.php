@@ -135,6 +135,7 @@ class ProductosController extends Controller
     /**
      * la funcion obtenerCSV nos permite atravez de la biblioteca Laravel excel
      * exportar los datos hacia un documento con extencion.csv
+     * 
      */
     public function obtenerCSV(){
         return Excel::download(new ProductosExport, 'Productos.csv');
